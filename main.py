@@ -11,12 +11,13 @@ import tensorflow as tf
 import time
 from tensorflow.python.framework import ops
 
-from tensorflow.contrib.tensorboard.plugins import projector
+from tensorboard.plugins import projector
+#from tensorflow.contrib.tensorboard.plugins import projector
 from sklearn.model_selection import train_test_split
 
-from functions import seq2num,element,combination,hilbert_curve,plot_hb_dna,read_file,plot_row1,diag_snack,snake_curve
+from functions import seq2num,element,combination,hilbert_curve,plot_hb_dna,read_file,plot_row1,diag_snake,snake_curve
 
-from train import train
+from trainer import train
 
 """
 important parameters
