@@ -64,6 +64,10 @@ def plot_row1(seq,sub_length,map_dic):
         H_dna[i, 0, :] = num_A[i, :]
     return H_dna
 
+#
+# KEY. Takes a raw DNA line. Split it into k-mers and use `mapping_dic` to convert it to one-factor.
+#
+
 # one hot encoding
 def one_hot(sequence, sub_len, mapping_dic):
     n_ = len(sequence)
